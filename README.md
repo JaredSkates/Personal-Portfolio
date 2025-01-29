@@ -57,4 +57,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
     - git remote -v 
         - Check for connection
     - git push -u origin main 
-        - Pushes the commit to the remote's 'default' branch; '-u' sets origin/main as the default remote branch
+        - Pushes the commit to the remote's 'main' branch; '-u' sets origin/main as the default remote branch
