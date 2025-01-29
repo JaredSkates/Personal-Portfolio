@@ -43,10 +43,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Using Github
 - Creating the repository
-    - git init # Initializes git to start tracking the project
-    - git add . # Selects all files in the project to prepare for the commit
-    - git commit -m "Inital Commit" # Saves your work
-    - git branch -M main # Creates a new branch
-    - git remote add origin https://github.com/JaredSkates/Personal-Portfolio.git # Connects the local project to the repository on github
-    - git remote -v # Check for connection
-    - git push -u origin main # Pushes the commit to the remote's 'default' branch
+    - git init
+        - Initializes git to start tracking the project
+    - git add . 
+        - Selects all files in the project to prepare for the commit
+    - git commit -m "Inital Commit" 
+        - Saves your work
+    - git branch -M main 
+        - Renames default branch on local machine to main
+        - 'git branch' allows you to check current branch
+    - git remote add origin https://github.com/JaredSkates/Personal-Portfolio.git 
+        - Connects the local project to the repository on github
+    - git remote -v 
+        - Check for connection
+    - git push -u origin main 
+        - Pushes the commit to the remote's 'default' branch; '-u' sets origin/main as the default remote branch
