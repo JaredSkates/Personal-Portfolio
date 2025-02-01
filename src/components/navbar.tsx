@@ -13,15 +13,15 @@ const Navbar = (props: Props) => {
 
   return (
     <div>
-      <div className='bg-white h-[100px] flex justify-around items-center'>
+      <div className=' bg-[#999d9e] h-[100px] w-screen flex justify-around items-center'>
         
-        <h1 className='text-3xl font-light text-black ml-4'>Jared Anastacio Ferrer</h1>
+        <h1 className='text-3xl font-thin text-black ml-4'>Jared Anastacio Ferrer</h1>
 
-        <ul className='hidden md:flex text-blue-600 font-thin'>
-          <li className='p-5 hover:text-blue-400'><a href='#about'>About</a></li>
-          <li className='p-5 hover:text-blue-400'><a href='#experience'>Experience</a></li>
-          <li className='p-5 hover:text-blue-400'><a href='#projects'>Projects</a></li>
-          <li className='p-5 hover:text-blue-400'><a href='#contact'>Contact</a></li>
+        <ul className='hidden md:flex text-white font-thin'>
+          <li className='p-5 hover:text-blue-600'><a href='#about'>About</a></li>
+          <li className='p-5 hover:text-blue-600'><a href='#experience'>Experience</a></li>
+          <li className='p-5 hover:text-blue-600'><a href='#projects'>Projects</a></li>
+          <li className='p-5 hover:text-blue-600'><a href='#contact'>Contact</a></li>
         </ul>
         
         <div className='block md:hidden mr-6 text-black' onClick={handleNav}>
@@ -30,9 +30,9 @@ const Navbar = (props: Props) => {
 
         <div className={nav ? 'fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500': 'fixed left-[-100%]'}>
           
-          <h1 className='text-3xl font-light text-white ml-4 flex justify-center mt-4'>Jared Anastacio Ferrer</h1>
+          <h1 className='text-3xl font-thin text-white ml-4 flex justify-center mt-4 underline underline-offset-4'>Jared Anastacio Ferrer</h1>
 
-          <ul className='p-8 text-2xl text-blue-400 font-thin'>
+          <ul className='p-8 text-2xl text-white font-thin'>
             <li className='p-2 hover:text-blue-200'><a href='#about'>About</a></li>
             <li className='p-2 hover:text-blue-200'><a href='#experience'>Experience</a></li>
             <li className='p-2 hover:text-blue-200'><a href='#projects'>Projects</a></li>
