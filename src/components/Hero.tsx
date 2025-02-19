@@ -30,15 +30,21 @@ const Hero = (props: Props) => {
                     repeat={Infinity}
                 />
             </h1>
+            
+            {/** TODO: Fix button layout and Add Resume*/}
+            <div className='flex gap-2 mt-6'>
+                <a href='' className='bg-black p-2 rounded-md w-100'>Download CV</a>
+                <a href='https://github.com/JaredSkates' className='bg-black p-2 rounded-md w-100'>Github</a>
+            </div>
         </div>
 
-        {/** TODO: Fix Location Banner for Small Screen Devices */}            
         <div className='hidden sm:flex absolute right-0 w-[270px] h-[90px] bg-black rounded-s-[50px] justify-center items-center gap-2 p-1'>
             <div className='w-16 h-16 rounded-[100%] bg-[#999d9e]'>
                 <img src='/world-svgrepo-com.svg' className='animate-pulse invert p-2'/>
             </div>
             <p className='text-center'>Located in California</p>
         </div>
+
     </div>
   )
 }
