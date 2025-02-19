@@ -14,7 +14,7 @@ export const EXPERIENCES = [
         description: `Collaborated with 2 coaches to teach the fundamentals of
                     basketball to a small cohort of kids. Helped organize and create
                     a welcoming environment.`,
-        technologies: ["Collaboration", "Node.js", "Vue.js"],
+        technologies: ["Collaboration"],
     },
     
 ];
