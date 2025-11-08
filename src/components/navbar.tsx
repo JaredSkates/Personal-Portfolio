@@ -2,9 +2,7 @@
 import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'; // 
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const [nav, setNav] = useState(false); // Navigation state
 
   const handleNav = () => { // Toggles our 'nav' value

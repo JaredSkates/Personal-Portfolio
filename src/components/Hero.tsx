@@ -3,13 +3,9 @@ import React from 'react'
 import Image from "next/image"
 import { TypeAnimation } from 'react-type-animation';
 
-type Props = {}
-
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <div className='mx-auto mt-40 flex flex-col min-h-[70vh] w-full max-w-6xl gap-8 py-8'>
-        
-        
 
         <div className='gap-20 mt-40 sm:gap-0 sm:my-auto flex w-full flex-col px-5 sm:flex-row'>
             {/* Social Media Navigation */}
@@ -55,7 +51,7 @@ const Hero = (props: Props) => {
         <div className='absolute left-0 hidden h-[90px] w-[250px] items-center justify-center gap-2 rounded-r-[50px] bg-[#5C5353] p-1 md:flex'>
             <p className='text-center text-white'>Located in California</p>
             <div className='h-16 w-16 rounded-full bg-neutral-200'>
-                <img src='/world-svgrepo-com.svg' className='p-2'/>
+                <Image width={100} height={100} src='/world-svgrepo-com.svg' alt='World' className='p-2'/>
             </div>
         </div>
 

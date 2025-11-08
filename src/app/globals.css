@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://dennissnellenberg.com/assets/fonts/NeueMontreal-Regular.otf');
 
 :root {
   --background: #ffffff;
