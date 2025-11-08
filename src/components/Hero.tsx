@@ -30,7 +30,7 @@ const Hero = () => {
             {/* Type Animation */}
             <h1 className='w-[80%] sm:w-2/5 text-3xl font-extralight text-gray-900 md:text-5xl lg:text-6xl'>
                 <span className='font-normal text-gray-500'> 
-                    I'm a
+                    I&apos;m a
                 </span> <br />
                 <TypeAnimation sequence={[
                     "Full Stack Developer",
