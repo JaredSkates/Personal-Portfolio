@@ -4,10 +4,14 @@ import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
+      {/* Primary Navigation */}
       <Navbar/> {/* Imported Navbar component  */}
+      
+      {/* Hero */}
       <Hero/> {/* Imported Hero component  */}
-      <div className="h-[20vh]"></div>
+
+      {/* Experience */}
       <Experience/> {/* Imported Experience component  */}
     </div>
   );
