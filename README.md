@@ -1,33 +1,71 @@
-INSPO: https://dennissnellenberg.com/
-Learning TailwindCSS: https://tailwindcss.com/docs/box-shadow
+# Jared's Portfolio v2 (Work In Progress)
 
-## How I Built The Project
-Terminal Commands
-- npx create-next-app@latest -> Create the project
-- npm install -> Installs Next.js
+Personal portfolio built with the Next.js App Router. It showcases my work, experience, and contact points with a clean UI and smooth animations.
+
+## Tech Stack
+- Next.js 15 (App Router) + React 19
+- TypeScript + ESLint 9
+- Tailwind CSS 3.4 for styling
+- Framer Motion for micro-interactions
+- React Icons & React Type Animation for UI polish
+
+## Features
+- **Responsive hero section** with animated typewriter text and CTA.
+- **Sticky navigation bar** that anchors major sections and routes (Work, About, Blog, Contact).
+- **Experience timeline** component describing roles/skills.
+- **Work showcase grid** using reusable `WorkCard` components (images, tech stack, project links).
+- **Tailwind-powered theming** with consistent spacing, typography, and soft card shadows.
+- **TypeScript-first setup** for safer components and better DX.
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18.18+ (or 20+) and npm 9+. Check with `node -v` and `npm -v`.
+- Git for cloning the repository.
+
+### Installation
+```bash
+git clone https://github.com/JaredSkates/jaredportfolio-v2.git
+cd jaredportfolio-v2
+npm install
+```
+
+### Local Development
+- `npm run dev` – starts Next.js in development mode on `http://localhost:3000`.
+- `npm run lint` – runs ESLint with the Next.js config.
+- `npm run build` – creates an optimized production build.
+- `npm run start` – serves the production build (run after `npm run build`).
+
+## Project Structure
+```
+.
+├── public/                 # Static assets (images, icons, fonts, etc.)
+├── src/
+│   ├── app/                # App Router entry points
+│   │   ├── layout.tsx      # Root layout / metadata
+│   │   ├── globals.css     # Global Tailwind layers
+│   │   ├── page.tsx        # Landing page (Navbar, Hero, Experience)
+│   │   ├── work/page.tsx   # Dedicated Work page with card grid
+│   │   ├── about/          # Placeholder routes for future content
+│   │   ├── blog/
+│   │   └── contact/
+│   ├── components/         # Reusable UI blocks
+│   │   ├── navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Experience.tsx
+│   │   ├── WorkCard1.tsx
+│   │   └── WorkCard2.tsx
+│   └── constants/          # Data definitions & shared config
+├── tailwind.config.ts      # Tailwind theme customization
+├── postcss.config.mjs
+├── tsconfig.json
+└── package.json
+```
 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
+Uses Vercel for reliable & efficient deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-## Using Github
-- Creating the repository
-    - git init
-        - Initializes git to start tracking the project
-    - git add . 
-        - Selects all files in the project to prepare for the commit
-    - git commit -m "Inital Commit" 
-        - Saves your work
-    - git branch -M main 
-        - Renames default branch on local machine to main
-        - 'git branch' allows you to check current branch
-    - git remote add origin https://github.com/JaredSkates/Personal-Portfolio.git 
-        - Connects the local project to the repository on github
-    - git remote -v 
-        - Check for connection
-    - git push -u origin main 
-        - Pushes the commit to the remote's 'main' branch; '-u' sets origin/main as the default remote branch
+---
+Feel free to open issues or PRs if you spot bugs or have ideas for new sections.
