@@ -1,6 +1,7 @@
 "use client"; // TODO
 import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'; // 
+import Link from 'next/link';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false); // Navigation state
@@ -13,14 +14,14 @@ const Navbar = () => {
     <div>
       <div className='mx-auto flex h-24 w-full max-w-6xl items-center justify-between px-6'>
         {/* Name */}
-        <h1 className='ml-4 text-3xl font-extralight text-gray-900'>Jared Anastacio Ferrer</h1>
+        <Link href={'/'} className='ml-4 text-3xl font-extralight text-gray-900'>Jared Anastacio Ferrer</Link>
 
         {/* Desktop Navigation */}
         <ul className='hidden items-center gap-6 text-lg font-light text-gray-900 md:flex'>
-          <li className='transition-colors hover:text-blue-600'><a href='#about'>Blog</a></li>
-          <li className='transition-colors hover:text-blue-600'><a href='#experience'>Work</a></li>
-          <li className='transition-colors hover:text-blue-600'><a href='#projects'>About</a></li>
-          <li className='transition-colors hover:text-blue-600'><a href='#contact'>Contact</a></li>
+          <li className='transition-colors hover:text-blue-600'><Link href='/blog'>Blog</Link></li>
+          <li className='transition-colors hover:text-blue-600'><Link href='/work'>Work</Link></li>
+          <li className='transition-colors hover:text-blue-600'><Link href='/about'>About</Link></li>
+          <li className='transition-colors hover:text-blue-600'><Link href='/contact'>Contact</Link></li>
         </ul>
         
         {/* Mobile Menu Toggle */}
