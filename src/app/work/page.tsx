@@ -14,7 +14,7 @@ export default function Work() {
         </p>
       </div>
       <div className="w-full flex justify-center">
-        <div className="h-[690px] overflow-y-auto grid grid-cols-1 sm:grid-cols-2">
+        <div className="h-[690px] overflow-y-scroll grid grid-cols-1 sm:grid-cols-2">
           {/* Card Column 1 */}
           <WorkCard2 />
 
