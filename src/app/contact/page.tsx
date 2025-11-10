@@ -15,14 +15,14 @@ export default function Contact() {
           <hr className="border-black"/>
           
           <div>
-            <h2>What's your name?</h2>
+            <h2>What&apos;s your name?</h2>
             <input type="text" className="border-none bg-transparent outline-none"/>
           </div>
 
           <hr className="border-black"/>
 
           <div>
-            <h2>What's your email?</h2>
+            <h2>What&apos;s your email?</h2>
             <input type="text" className="border-none bg-transparent outline-none"/>
           </div>
 
