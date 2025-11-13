@@ -1,8 +1,6 @@
-export const runtime = "nodejs";
-
 import { error } from "console";
 import { NextResponse } from "next/server";
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
 
 export async function POST(req: Request) {

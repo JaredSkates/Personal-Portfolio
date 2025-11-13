@@ -23,6 +23,7 @@
     "@eslint/eslintrc": "^3",
     "@types/aos": "^3.0.7",
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.3",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
