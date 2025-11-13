@@ -16,6 +16,7 @@ Personal portfolio built with the Next.js App Router. It showcases my work, expe
 - **Work showcase grid** using reusable `WorkCard` components (images, tech stack, project links).
 - **Tailwind-powered theming** with consistent spacing, typography, and soft card shadows.
 - **TypeScript-first setup** for safer components and better DX.
+- **Nodemailer** for inquiries
 
 ## Getting Started
 

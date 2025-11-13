@@ -1,7 +1,8 @@
-import ContactForm from "@/components/Form";
+import { Form } from "@/components/Form";
 import Navbar from "@/components/navbar";
 
-export default function Contact() {
+export default function Page() {
+
   return (
     <div className="min-h-screen">
       {/* Primary Navigation */}
@@ -11,13 +12,7 @@ export default function Contact() {
         <h1 className="text-black text-4xl font-medium">Inquiries</h1>
       </div>
 
-      <section className="flex flex-col sm:flex-row justify-center sm:gap-20">
-        <ContactForm/>
-
-        <button className="p-4 bg-[#908484] w-[168px] h-[168px] rounded-[100%] self-center sm:self-end">Send!</button>
-  
-      </section>
-
+      <Form />
 
       <footer className="ml-2 p-6">
         <span className="text-black font-thin">&copy;Jared Anastacio Ferrer</span>
