@@ -25,10 +25,21 @@ export function Form() {
             })
 
             console.log(response.data)
+
+            if(response.data) {
+                resetValues();
+            }
         } catch (error) {
             console.log(error)
         }
-    } 
+    }
+    
+    const resetValues = () => {
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+    }
 
     return(
         <form onSubmit={onFormSubmitted} className="flex flex-col sm:flex-row justify-center sm:gap-20">
