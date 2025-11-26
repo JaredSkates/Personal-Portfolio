@@ -36,10 +36,10 @@ const Navbar = () => {
           <hr className='mx-8 my-4 border-white/30'/>
 
           <ul className='space-y-3 text-2xl font-light text-white'>
-            <li className='transition-colors hover:text-blue-200'><a href='#about'>About</a></li>
-            <li className='transition-colors hover:text-blue-200'><a href='#experience'>Experience</a></li>
-            <li className='transition-colors hover:text-blue-200'><a href='#projects'>Projects</a></li>
-            <li className='transition-colors hover:text-blue-200'><a href='#contact'>Contact</a></li>
+            <li className='transition-colors hover:text-blue-200'><a href='/about'>About</a></li>
+            <li className='transition-colors hover:text-blue-200'><a href='/blog'>Blog</a></li>
+            <li className='transition-colors hover:text-blue-200'><a href='/work'>Work</a></li>
+            <li className='transition-colors hover:text-blue-200'><a href='/contact'>Contact</a></li>
           </ul>
         </div>
 
