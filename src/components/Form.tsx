@@ -2,12 +2,14 @@
 import axios from 'axios'
 import { useState } from "react";
 import { SubmitButton } from './ui/SubmitButton';
+import { PopUp } from './PopUp';
 
 export function Form() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
+    const [popUp, setPopUp] = useState(false)
 
     async function onFormSubmitted(event: React.FormEvent) {
         event?.preventDefault();
@@ -27,6 +29,7 @@ export function Form() {
             console.log(response.data)
 
             if(response.data) {
+                setPopUp(true);
                 resetValues();
             }
         } catch (error) {
@@ -97,6 +100,10 @@ export function Form() {
             
             
             <SubmitButton />
+
+            {popUp && ( 
+                <PopUp onClose={() => setPopUp(false)}/> 
+            )}
         </form>
 
 

@@ -14,7 +14,7 @@ export default function WorkCard1() {
       />
 
       <WorkCard
-        title="Neuroflow AI"
+        title="Hoppscotch"
         imageSrc="/work1.png"
         description="AI assisted note taking application built for the web"
         techStackImg="/TechStack1.svg"
