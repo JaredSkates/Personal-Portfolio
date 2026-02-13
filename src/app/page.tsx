@@ -1,6 +1,5 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/Hero";
-import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -9,8 +8,6 @@ export default function Home() {
       <Navbar /> {/* Imported Navbar component  */}
       {/* Hero */}
       <Hero /> {/* Imported Hero component  */}
-      {/* Experience */}
-      <Experience /> {/* Imported Experience component  */}
     </div>
   );
 }

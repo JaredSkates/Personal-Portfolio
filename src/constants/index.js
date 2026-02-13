@@ -1,20 +1,19 @@
-export const EXPERIENCES = [
-    {
-        date: "Nov 2024 - Dec 2024",
-        role: "SWE Micro-Intern",
-        company: "CodeDay Labs",
-        description: `Collaborated with a team of 4 to implement Version Entities,
-                    a feature that allows data structures to maintain compatability.`,
-        technologies: ["TypeScript", "Node.js", "Vue.js"],
+export const experiences = [
+    { 
+        title:"Neuroflow AI",
+        imageSrc:"/work1.png",
+        description:"AI assisted note taking application built for the web",
+        techStackImg:"/TechStack1.svg",
+        projectLink:"https://github.com/JaredSkates/NeuroFlow-AI",
     },
+];
+
+export const experiences2 = [
     {
-        date: "Jun 2024 - Jun 2024",
-        role: "Volunteer",
-        company: "Area Youth Ministry",
-        description: `Collaborated with 2 coaches to teach the fundamentals of
-                    basketball to a small cohort of kids. Helped organize and create
-                    a welcoming environment.`,
-        technologies: ["Collaboration"],
-    },
-    
+        title:"Spotify Wrapped Dashboard",
+        imageSrc:"/SpotifyWrapped.png",
+        description:"Visual dashboard showcasing my Spotify statistics for 2025",
+        techStackImg:"/TechStack1.svg",
+        projectLink:"https://github.com/JaredSkates/spotify-dashboard",
+    }
 ];
